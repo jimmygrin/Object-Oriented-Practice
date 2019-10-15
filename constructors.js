@@ -58,7 +58,7 @@ Human.prototype.pet = function(dog) {
 }
 
 Human.prototype.feed = function(dog) {
-    dog.hungry='false'
+    dog.hungry=false
 }
 
 
