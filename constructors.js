@@ -50,7 +50,12 @@ Dog.prototype = {
 }
 
 function Human (a) {
-    this.cool=true
+    if(a && a.hasOwnProperty('cool')) {
+        this.cool = a.cool
+    } else {
+        this.cool = false
+    }
+
 }
 
 Human.prototype.pet = function(dog) {
